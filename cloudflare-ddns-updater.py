@@ -46,7 +46,11 @@ class CloudflareDNSUpdater:
     def get_zone_id(self):
         """Retrieve the zone ID for the domain."""
         try:
-            response = requests.get(f"{self.base_url}/zones", headers=self.headers, params={"name": self.domain})
+            response = requests.get(
+                f"{self.base_url}/zones",
+                headers=self.headers,
+                params={"name": self.domain}
+            )
             response.raise_for_status()
             zones = response.json()["result"]
             if not zones:
@@ -79,7 +83,8 @@ class CloudflareDNSUpdater:
         """Retrieve the current IP address in the DNS record."""
         try:
             response = requests.get(
-                f"{self.base_url}/zones/{zone_id}/dns_records/{record_id}", headers=self.headers
+                f"{self.base_url}/zones/{zone_id}/dns_records/{record_id}",
+                headers=self.headers
             )
             response.raise_for_status()
             return response.json()["result"]["content"]
