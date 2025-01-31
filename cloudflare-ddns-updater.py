@@ -95,7 +95,7 @@ class CloudflareDNSUpdater:
     def update_dns_record(self, zone_id, record_id, new_ip):
         """Update the DNS record with the new IP address."""
         try:
-            data = {"type": "A", "name": self.domain, "content": new_ip}
+            data = {"type": "A", "name": self.domain, "content": new_ip, "proxied": False}
             response = requests.put(
                 f"{self.base_url}/zones/{zone_id}/dns_records/{record_id}",
                 headers=self.headers,
