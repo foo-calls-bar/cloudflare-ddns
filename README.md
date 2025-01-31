@@ -34,7 +34,7 @@
 2023-10-25 12:34:57,456 - INFO - DNS record is already up to date. No update needed.
 ```
 
-- **Forced Update**:
+- **Force Update**:
 ```
 2023-10-25 12:34:56,789 - INFO - Public IP address: 192.0.2.1
 2023-10-25 12:34:57,123 - INFO - Current DNS record IP: 192.0.2.1
