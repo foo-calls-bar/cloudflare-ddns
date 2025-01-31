@@ -46,7 +46,7 @@
 ```
 2023-10-25 12:34:56,789 - INFO - Public IP address: 192.0.2.2
 2023-10-25 12:34:57,123 - INFO - Current DNS record IP: 192.0.2.1
-2023-10-25 12:34:57,456 - INFO - DNS record is outdated. Updating...```
+2023-10-25 12:34:57,456 - INFO - DNS record is outdated. Updating...
 2023-10-25 12:34:57,456 - INFO - DNS record updated successfully: {...}
 ```
 
