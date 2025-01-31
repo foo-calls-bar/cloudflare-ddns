@@ -1,12 +1,12 @@
 ### Example Usage:
 1. **Normal Update**:
    ```bash
-   python3 cloudflare-ddns.py your_api_token your_email@example.com yourdomain.com
+   python3 cloudflare-ddns-updater.py your_api_token your_email@example.com yourdomain.com
    ```
 
 2. **Force Update**:
    ```bash
-   python3 cloudflare-ddns.py your_api_token your_email@example.com yourdomain.com --force
+   python3 cloudflare-ddns-updater.py your_api_token your_email@example.com yourdomain.com --force
    ```
 
 ### Example Logs in Syslog:
