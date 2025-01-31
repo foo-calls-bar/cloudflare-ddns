@@ -1,4 +1,4 @@
-### Example Usage:
+### Usage:
    ```bash
    python3 cloudflare-ddns-updater.py <API_TOKEN> <DOMAIN> [--force]
    ```
